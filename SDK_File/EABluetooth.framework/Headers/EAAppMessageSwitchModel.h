@@ -11,8 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class EAAppMessageSwitchData;
 
-
-
 typedef NS_OPTIONS(NSUInteger, EAShowAppType) {
     
     EAShowAppTypeUnknow         = 0,
