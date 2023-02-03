@@ -11,3 +11,5 @@ https://github.com/EastApex/EASDKTool_iOS.git
 需要修改以下内容
 在 Podfile 添加
 pod 'EABluetooth', :git =>  'https://github.com/EastApex/EA_Haylou_SDK.git'
+
+
