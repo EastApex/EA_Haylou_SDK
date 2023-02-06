@@ -43,7 +43,6 @@ typedef void(^RespondBlock)(EARespondModel *respondModel);
 /// 获取大数据【需要等待手表发送完成大数据消息才会有数据：EAPhoneOpsBig8803DataUpdateFinish】
 - (NSArray *)getBigDataWithBigDataType:(EADataInfoType)bigDataType;
 
-
 /// 获取睡眠大数据
 /// - Parameter mergeTime: 当天睡眠合并间隔时长，单位分钟【昨天的18点至今天的18点，为今天睡眠】
 - (NSDictionary *)getSleepBigDataWithMergeTime:(NSInteger)mergeTime;
@@ -61,10 +60,10 @@ typedef void(^RespondBlock)(EARespondModel *respondModel);
 /// AGPS OTA
 - (BOOL)upgrade:(EAOTA *)ota;
 
+
 /// Customize the background watch face
 /// 自定义背景图片的表盘
 - (NSInteger )customWatchFaceBackgroundImage:(UIImage *)backGroundImage colorType:(EACWFTimerColorType )colorType styleType:(EACWFStyleType)styleType;
-
 
 /// Customize the background watch face 【自定义背景图片的表盘】
 /// - Parameters:

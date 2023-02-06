@@ -59,6 +59,13 @@ if (!fileHandle) {\
 /// 扫描所有设备 ，默认关闭
 @property (nonatomic, assign) BOOL canScanAllDevices;
 
+/// SDK分析处理大数据,isTest必须设为NO，不然不会处理
+@property (nonatomic, assign) BOOL analyzeBigData;
+
+/// 用户ID，analyzeBigData为YES，必须设置
+@property (nonatomic, copy) NSString *userId;
+
+
 /// ignore：
 /// 显示信号量 ，默认关闭
 //@property (nonatomic, assign) BOOL showRSSI;
