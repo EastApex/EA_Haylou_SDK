@@ -62,8 +62,6 @@ if (!fileHandle) {\
 /// SDK分析处理大数据,isTest必须设为NO，不然不会处理
 @property (nonatomic, assign) BOOL analyzeBigData;
 
-/// 用户ID，analyzeBigData为YES，必须设置
-@property (nonatomic, copy) NSString *userId;
 
 
 /// ignore：

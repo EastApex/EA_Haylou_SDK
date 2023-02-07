@@ -21,6 +21,7 @@ typedef void(^RespondBlock)(EARespondModel *respondModel);
 @interface EABleSendManager : NSObject
 
 
+
 /// The singleton 单例
 + (instancetype)defaultManager;
 
@@ -61,8 +62,13 @@ typedef void(^RespondBlock)(EARespondModel *respondModel);
 - (BOOL)upgrade:(EAOTA *)ota;
 
 
-/// Customize the background watch face
-/// 自定义背景图片的表盘
+/// Customize the background watch face【自定义背景图片的表盘】
+/// - Parameters:
+///   - backGroundImage: background image【背景图片】
+///   - colorType: EACWFTimerColorType
+///   - styleType: EACWFStyleType
+///   To check the origin and other information of each element, please check CWF_Point_Circle.json or CWF_Point_Square.json of EAWatchFace.bundle
+///   【查看各个元素的原点等信息请查看EAWatchFace.bundle的CWF_Point_Circle.json或者CWF_Point_Square.json】
 - (NSInteger )customWatchFaceBackgroundImage:(UIImage *)backGroundImage colorType:(EACWFTimerColorType )colorType styleType:(EACWFStyleType)styleType;
 
 /// Customize the background watch face 【自定义背景图片的表盘】
