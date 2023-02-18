@@ -13,12 +13,10 @@
  SDK access documentation
  https://www.showdoc.com.cn/2042713679210858/0  password:123456
  
- Version：2023.02.08
- 1.Fixed the watch face bule bug;
- 2.Class EAMenstruals add new method and abandon method; Detail to see class 'EAMenstruals';
- 3.Modify setting the callback of EAReminderModel and EAHabitTrackerModel to EARespondModel. Deprecated EAReminderRespondModel and EAHabitTrackerRespondModel;
- 
- */
+ Version：2023.02.17
+ 1.Improve data collection by SDKlog.
+ 2.Fixed some bug.
+  */
 
 
 #import <Foundation/Foundation.h>
@@ -150,7 +148,7 @@ typedef void(^UpdateValueBlock)(CBCharacteristic *characteristic,NSError *error)
 
 /// Searching for watch Agents
 /// 搜索设备代理
-@property(nonatomic,weak) id<EABleManagerDelegate> delegate;
+@property(nonatomic,assign) id<EABleManagerDelegate> delegate;
 
 /// ignore：Bluetooth data Broker
 /// 忽略：蓝牙数据代理
@@ -159,6 +157,9 @@ typedef void(^UpdateValueBlock)(CBCharacteristic *characteristic,NSError *error)
 /// Watch connection status
 /// 连接设备状态
 @property(nonatomic,assign) EAConnectStateType connectState;
+
+/// 当前连接的设备
+@property (nonatomic, strong) EAPeripheralModel *eaPeripheralModel;
 
 
 /// The singleton

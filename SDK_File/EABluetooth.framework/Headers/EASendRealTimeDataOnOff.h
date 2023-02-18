@@ -20,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype )eaInitWithOnOff:(BOOL)sw;
 
 
-+ (instancetype )getModelByData:(NSData *)data;
 @end
 
 NS_ASSUME_NONNULL_END
