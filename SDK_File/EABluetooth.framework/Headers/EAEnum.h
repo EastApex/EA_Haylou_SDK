@@ -2236,8 +2236,9 @@ typedef NS_ENUM(NSUInteger, EACWFTimerColorType) {
 #pragma mark - 自定义表盘风格类型
 typedef NS_ENUM(NSUInteger, EACWFStyleType) {
     
-    EACWFStyleTypePictureNumber         = 1,    // 图片数字表盘
-    EACWFStyleTypeNumber                = 2,    // 数字表盘
+    EACWFStyleTypePictureNumber         = 1,    // Picture digital dial【图片数字表盘】
+    EACWFStyleTypePointer               = 2,    // Pointer dial【指针表盘】
+    
 };
 
 #pragma mark - 手表形状
