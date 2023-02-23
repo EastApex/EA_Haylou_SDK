@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-+ (NSData *)getModelDataByRequestId:(NSInteger )requestId;
+//+ (NSData *)getModelDataByRequestId:(NSInteger )requestId;
 
 - (NSData *)getRequestModelData;
 

@@ -11,10 +11,11 @@
  https://github.com/EastApex/EASDKTool_iOS.git
  
  SDK access documentation
- https://www.showdoc.com.cn/2042713679210858/0  password:123456
+ https://www.showdoc.com.cn/2042713679210858/0
  
- Version：2023.02.17
- 1.Improve data collection by SDKlog.
+ Date：2023-02-22
+ Version：1.0.65.2
+ 1.Add a pointer dial.
  2.Fixed some bug.
   */
 
@@ -101,13 +102,19 @@ typedef NS_ENUM(NSUInteger, EAConnectStatus) {
 #define kNTF_EAOTAAGPSDataing               @"EAOTAAGPSDataing"
 
 /// 实时数据
+/// Real time data
 #define kNTF_EARealTimeData                 @"EARealTimeData"
 
 /// App运动实时数据
+/// App sport real time data
 #define kNTF_EAAppSportRealTime             @"EAAppSportRealTime"
 
 /// 上报启动手表测量结果【id = 48 测量结果）】
+/// Report the measurement result of starting the watch [id = 48 measurement result]
 #define kNTF_EAAppOpsData                   @"EAAppOpsData"
+
+
+
 
 
 #define kKeychainService        @"com.eastapex.bluetooth"

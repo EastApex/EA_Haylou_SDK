@@ -8,7 +8,7 @@
 #import <EABluetooth/EABluetooth.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+/// id = 2007 : 
 @interface EARealTimeModel : EABaseModel
 
 /// 当前总步数
@@ -36,7 +36,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) NSInteger batLev;
 
 
-+ (EARealTimeModel *)getModelByData:(NSData *)data;
 
 @end
 
