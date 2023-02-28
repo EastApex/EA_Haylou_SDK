@@ -13,11 +13,17 @@
  SDK access documentation
  https://www.showdoc.com.cn/2042713679210858/0
  
- Date：2023-02-24
- Version：1.0.65.3
- 1.Fixed the watch is disconnected from the outside and cannot communicate with each other after reconnecting.【修复手表以外断连，重新连接后不能相互通讯问题。】
- 2.
+ Date：2023-02-27
+ Version：1.0.65.5
+ 1.Fix the problem that the thumbnail of the custom watch face is blurred.
+ 2.Modify the dependent library without specifying the version.
+
+ 
   */
+
+
+
+
 
 
 #import <Foundation/Foundation.h>

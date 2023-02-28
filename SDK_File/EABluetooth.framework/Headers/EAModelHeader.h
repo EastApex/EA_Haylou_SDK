@@ -8,9 +8,10 @@
 #ifndef EAModelHeader_h
 #define EAModelHeader_h
 
+
+
+
 // model
-
-
 #import <EABluetooth/EAPeripheralModel.h>
 #import <EABluetooth/EAWatchModel.h>
 #import <EABluetooth/EAUserModel.h>
@@ -111,4 +112,5 @@
 #import <EABluetooth/EADBFrequencyModel.h>
 #import <EABluetooth/EADBOneSleepModel.h>
 #import <EABluetooth/EADBDaySleepModel.h>
+
 #endif /* EAModelHeader_h */
