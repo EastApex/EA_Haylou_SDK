@@ -13,11 +13,12 @@
  SDK access documentation
  https://www.showdoc.com.cn/2042713679210858/0
  
- Date：2023-02-27
- Version：1.0.65.5
- 1.Fix the problem that the thumbnail of the custom watch face is blurred.
- 2.Modify the dependent library without specifying the version.
-
+ Date：2023-03-03
+ Version：1.0.65.6
+ 1.Fixed EASyncTime.getCurrent()==>timeZoneMinute error.
+ 2.Add default custom digital watch face method. See class EAMakeWatchFaceManager.
+ 3.Added custom pointer watch face method. See class EAMakeWatchFaceManager.
+ 4.Fix missing motion data.
  
   */
 
