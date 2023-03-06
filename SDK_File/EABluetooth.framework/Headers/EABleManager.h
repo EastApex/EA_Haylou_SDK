@@ -19,7 +19,7 @@
  2.Add default custom digital watch face method. See class EAMakeWatchFaceManager.
  3.Added custom pointer watch face method. See class EAMakeWatchFaceManager.
  4.Fix missing motion data.
- 
+ 5.When OTA, the lower version of bin is ignored.
   */
 
 
