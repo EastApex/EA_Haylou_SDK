@@ -8,9 +8,26 @@
 #import <EABluetooth/EABaseBigDataModel.h>
 
 NS_ASSUME_NONNULL_BEGIN
+/*
+How are the following integers calculated?
+int trainingEffectNormal = 0;
+int trainingEffectWarmUp = 0;
+int trainingEffectFatConsumption = 0;
+int trainingEffectAerobic = 0;
+int trainingEffectAnaerobic = 0;
+int trainingEffectLimit = 0;
+int averageHeartRate = 0;
+The CDC currently holds these formulas for target heart rate zones:
+Maximum Heart Rate (MHR)= 220-age
+Fat Burning= Falls among (MHR *.50) & (MHR *.60)
+Temperate zone= Falls among (MHR *.60) & (MHR *.70)
+Aerobic zone= Falls among (MHR *.70) & (MHR *.80)
+Immediate= Falls among (MHR *.90) & 100%
+*/
 
 
 /// 多运动数据
+/// Sport Data
 @interface EASportsDataModel : EABigDataModel
 
 /// Sport type

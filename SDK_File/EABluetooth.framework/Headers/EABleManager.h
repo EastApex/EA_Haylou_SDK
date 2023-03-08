@@ -14,12 +14,8 @@
  https://www.showdoc.com.cn/2042713679210858/0
  
  Date：2023-03-03
- Version：1.0.65.6
- 1.Fixed EASyncTime.getCurrent()==>timeZoneMinute error.
- 2.Add default custom digital watch face method. See class EAMakeWatchFaceManager.
- 3.Added custom pointer watch face method. See class EAMakeWatchFaceManager.
- 4.Fix missing motion data.
- 5.When OTA, the lower version of bin is ignored.
+ Version：1.0.65.7
+ 1.添加命令超时回应。
   */
 
 
