@@ -99,6 +99,7 @@
 #import <EABluetooth/EADataValue.h>
 #import <EABluetooth/EACustomNumberWatchFaceModel.h>
 #import <EABluetooth/EAHandleBigData.h>
+#import <EABluetooth/EALoadBundleFile.h>
 
 // DB
 #import <EABluetooth/EADBSportModel.h>

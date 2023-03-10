@@ -2248,7 +2248,6 @@ typedef NS_ENUM(NSUInteger, EACWFTimerColorType) {
     
     EACWFTimerColorTypeBlack         = 0,
     EACWFTimerColorTypeWhite         = 1,
-    EACWFTimerColorTypeYellow        = 2,
 };
 
 #pragma mark - 自定义表盘风格类型

@@ -63,11 +63,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return Thumbnail
 + (UIImage *)eaGetDefaultNumberThumbnailWithImage:(UIImage *)image color:(UIColor *)color;
 
+/// Create Haylou thumbnail of default style digital watch face
+/// @return Thumbnail
++ (UIImage *)eaGetHlDefaultNumberThumbnailWithImage:(UIImage *)image color:(UIColor *)color;
 
 /// Create a fully custom pointer watch face thumbnail 【创建完全自定义指针表盘缩略图】
 /// @return Thumbnail
-+ (UIImage *)eaGetPointerThumbnailWithImage:(UIImage *)image list:(NSArray <EACustomPointerWatchFaceModel *>*)pointerList ;
++ (UIImage *)eaGetPointerThumbnailWithImage:(UIImage *)image list:(NSArray <EACustomPointerWatchFaceModel *>*)pointerList;
 
+
+/// Create a fully custom pointer watch face thumbnail
+/// @return Thumbnail
++ (UIImage *)eaGetHlPointerThumbnailWithImage:(UIImage *)image color:(EACWFTimerColorType )colorType;
 
 
 
@@ -84,10 +91,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// default style digital watch face【默认数字表盘】
 + (NSInteger )eaOtaDefaultNumberThumbnailWithImage:(UIImage *)image color:(UIColor *)color ;
 
+/// Haylou default style digital watch face【Haylou默认数字表盘】
++ (NSInteger )eaOtaHlDefaultNumberThumbnailWithImage:(UIImage *)image color:(UIColor *)color ;
+
 /// Fully custom pointer watch face 【完全自定义指针表盘】
 + (NSInteger )eaOtaPointerThumbnailWithImage:(UIImage *)image list:(NSArray <EACustomPointerWatchFaceModel *>*)pointerList;
 
-
+/// Haylou custom pointer watch face 【Haylou 自定义指针表盘】
++ (NSInteger )eaOtaHlPointerThumbnailWithImage:(UIImage *)image color:(EACWFTimerColorType )colorType;
 
 @end
 

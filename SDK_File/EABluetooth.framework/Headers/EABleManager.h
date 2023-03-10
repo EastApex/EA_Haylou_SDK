@@ -13,9 +13,11 @@
  SDK access documentation
  https://www.showdoc.com.cn/2042713679210858/0
  
- Date：2023-03-03
+ Date：2023-03-10
  Version：1.0.65.7
  1.添加命令超时回应。
+ 2.修改 mtu 大于512 通讯问题。
+ 3.修改 搜索设备时，断开已连接的设备。
   */
 
 
