@@ -672,6 +672,18 @@ typedef NS_ENUM(NSUInteger,EALanguageType) {
     ///  波斯语
     ///  Farsi
     EALanguageTypeFarsi = 23,
+    
+    ///越南语
+    ///Vietnamese
+    EALanguageTypeVietnamese = 24,
+
+    ///白俄罗斯语
+    ///Belarusian
+    EALanguageTypeBelarusian = 25,
+
+    ///匈牙利语
+    ///Hungarian
+    EALanguageTypeHungarian = 26,
 };
 
 
@@ -2248,6 +2260,8 @@ typedef NS_ENUM(NSUInteger, EACWFTimerColorType) {
     
     EACWFTimerColorTypeBlack         = 0,
     EACWFTimerColorTypeWhite         = 1,
+//    EACWFTimerColorTypeYellow        = 2,
+
 };
 
 #pragma mark - 自定义表盘风格类型
@@ -2255,15 +2269,14 @@ typedef NS_ENUM(NSUInteger, EACWFStyleType) {
     
     EACWFStyleTypePictureNumber         = 1,    // Picture digital dial【图片数字表盘】
     EACWFStyleTypePointer               = 2,    // Pointer dial【指针表盘】
-    
 };
 
 #pragma mark - 自定义表盘指针刻度类型类型
 typedef NS_ENUM(NSUInteger, EACWFPointerScaleStyle) {
     
     EACWFPointerScaleStyleNone          = 0,    // None【无刻度】
-    EACWFPointerScaleStyleBar           = 1,    // Bar scale【条形刻度】
-    EACWFPointerScaleStyleDigitalBar    = 2,    // Digital bar scale【数字条形刻度】
+//    EACWFPointerScaleStyleBar           = 1,    // Bar scale【条形刻度】
+//    EACWFPointerScaleStyleDigitalBar    = 2,    // Digital bar scale【数字条形刻度】
 //    EACWFPointerScaleStyleRoman         = 3,    // Roman number【罗马数字】
 //    EACWFPointerScaleStyleDiamond       = 4,    // Diamond【钻石】
 };

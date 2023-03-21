@@ -9,20 +9,27 @@
 
 NS_ASSUME_NONNULL_BEGIN
 /*
-How are the following integers calculated?
-int trainingEffectNormal = 0;
-int trainingEffectWarmUp = 0;
-int trainingEffectFatConsumption = 0;
-int trainingEffectAerobic = 0;
-int trainingEffectAnaerobic = 0;
-int trainingEffectLimit = 0;
-int averageHeartRate = 0;
-The CDC currently holds these formulas for target heart rate zones:
-Maximum Heart Rate (MHR)= 220-age
-Fat Burning= Falls among (MHR *.50) & (MHR *.60)
-Temperate zone= Falls among (MHR *.60) & (MHR *.70)
-Aerobic zone= Falls among (MHR *.70) & (MHR *.80)
-Immediate= Falls among (MHR *.90) & 100%
+ How are the following integers calculated?
+ 
+ int hr_training_effect_normal = 0;
+ int hr_training_effect_warmUp = 0;
+ int hr_training_effect_fatConsumption = 0;
+ int hr_training_effect_aerobic = 0;
+ int hr_training_effect_anaerobic = 0;
+ int hr_training_effect_limit = 0;
+ 
+ if(body_sex == man)
+    {m_body_hr_max = 205 -body_age;}
+ else if(body_sex == women)
+    {m_body_hr_max = 220 -body_age;}
+ 
+ hr_training_effect_normal,            //     <50%      *m_body_hr_max
+ hr_training_effect_warmUp,            //     50%~60%   *m_body_hr_max
+ hr_training_effect_fatConsumption,    //     60%~70%   *m_body_hr_max
+ hr_training_effect_aerobic,           //     70%~80%   *m_body_hr_max
+ hr_training_effect_anaerobic,         //     80%~90%   *m_body_hr_max
+ hr_training_effect_limit,             //     90%~100%  *m_body_hr_ma
+
 */
 
 
@@ -127,9 +134,6 @@ Immediate= Falls among (MHR *.90) & 100%
 /// 次数【跳绳】
 @property(nonatomic, assign) NSInteger count;
 
-/// ignore：
-/// 有效时长
-@property (nonatomic,assign) NSInteger validTime;
 
 @end
 
