@@ -11,7 +11,7 @@
 #import <EABluetooth/EADataValue.h>
 #import <EABluetooth/EAModelCustomPropertyMapperConfig.h>
 #import <EABluetooth/EADataInfoModel.h>
-
+#import <EABluetooth/EABleConfig.h>
 @class GPBMessage;
 NS_ASSUME_NONNULL_BEGIN
 

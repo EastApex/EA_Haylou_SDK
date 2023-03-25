@@ -414,8 +414,14 @@ typedef NS_ENUM(NSUInteger, EARespondCodeType) {
     EARespondCodeTypeFail = 1,
     
     /// App发起运动回应状态（id=46）:手表正在运动，请结束后再开
+    /// App launch motion response status (id=46) : Watch is moving, please open it after the end
     EARespondCodeTypeWatchInMotion = 2,
 
+    /// App发起运动回应状态（id=47）:APP运动已经结束。
+    /// App launch campaign response status (id=47) :APP campaign has ended.
+    EARespondCodeTypeWatchEndMotion = 3,
+    
+    
     /// The maximum number supported is exceeded
     /// 超过支持的最大数量
     EARespondCodeTypeMemFull = 902,
@@ -423,7 +429,6 @@ typedef NS_ENUM(NSUInteger, EARespondCodeType) {
     /// Time to repeat
     /// 时间重复
     EARespondCodeTypeTimeConflict = 903,
-    
     
     /// 超时
     /// Time Out
@@ -433,10 +438,10 @@ typedef NS_ENUM(NSUInteger, EARespondCodeType) {
     /// Not to read
     EARespondCodeTypeNotToRead = 998,
     
+    
     /// 不允许写入
     ///Not to wirte
     EARespondCodeTypeNotToWirte = 999,
-    
     
 };
 
@@ -1248,7 +1253,7 @@ typedef NS_ENUM(NSUInteger,EASleepNode) {
     EASleepNodeActivity = 0,
     
     /// Enter sleep
-    /// 进入睡眠 (!!!)
+    /// 进入睡眠 (!!!),同时 代表进入浅睡状态
     EASleepNodeEnter = 1,
     
     /// Wake
@@ -1309,7 +1314,7 @@ typedef NS_ENUM(NSUInteger,EASportType) {
     EASportTypeOurdoorTrailRunning = 5,
 
     /// Cycling
-    /// 户外单车、室外骑行
+    /// 户外单车、室外骑行、户外骑行
     EASportTypeOurdoorCycling = 6,
 
     /// Outdoor Swim
@@ -1445,7 +1450,7 @@ typedef NS_ENUM(NSUInteger,EASportType) {
     EASportTypeTrainBack = 39,
 
     /// Sailboat
-    /// 帆船
+    /// 帆船、帆船运动
     EASportTypeWaterSailboat = 40,
 
     /// SUP
@@ -1461,7 +1466,7 @@ typedef NS_ENUM(NSUInteger,EASportType) {
     EASportTypeWaterThrash = 43,
 
     /// Kayak
-    /// 皮划艇
+    /// 皮划艇、赛艇
     EASportTypeWaterKayak = 44,
 
     /// Drifting
@@ -1489,7 +1494,7 @@ typedef NS_ENUM(NSUInteger,EASportType) {
     EASportTypeWaterSnorkel = 50,
 
     /// Kitesurfing
-    /// 风筝冲浪
+    /// 风筝冲浪、冲浪
     EASportTypeWaterKitesurfing = 51,
 
     /// ATV
@@ -1513,7 +1518,7 @@ typedef NS_ENUM(NSUInteger,EASportType) {
     EASportTypeDanceGymnastics = 56,
 
     /// Aerobics
-    /// 健身操
+    /// 健身操、室内健身
     EASportTypeDanceAerobics = 57,
 
     /// Hip-Hop
@@ -1609,7 +1614,7 @@ typedef NS_ENUM(NSUInteger,EASportType) {
     EASportTypeSnowBoard = 80,
 
     /// Skis
-    /// 双板滑雪
+    /// 双板滑雪、滑雪
     EASportTypeSnowSkis = 81,
 
     /// Puck
@@ -1690,7 +1695,7 @@ typedef NS_ENUM(NSUInteger,EASportType) {
     EASportTypeLeisureRacing = 100,
 
     /// Free Exercise
-    /// 自由锻炼
+    /// 自由锻炼、自由训练
     EASportTypeOtherFree = 101,
 
     /// Rope
@@ -1698,7 +1703,7 @@ typedef NS_ENUM(NSUInteger,EASportType) {
     EASportTypeOtherRope = 102,
 
     /// Climb
-    /// 上楼梯
+    /// 上楼梯、爬楼梯
     EASportTypeOtherClimb = 103,
 
     /// Push Pull
