@@ -43,17 +43,17 @@ NS_ASSUME_NONNULL_BEGIN
 /// 短信
 @property(nonatomic, strong) EASocialOps *sSms;
 
-/// Social
-/// 社交（第三方App推送提醒 ）
+/// Social will affect the display of APP push. [1: displayed 0: not displayed]
+/// 社交（第三方App推送提醒 ） 会影响 APP推送的显示。1：显示 0：不显示
 @property(nonatomic, strong) EASocialOps *sSocial;
 
-
-/// 邮件
+/// sEmail affects mobile email APP alerts. [1: displayed 0: not displayed]
+/// 邮件 会影响手机邮箱APP提醒。1：显示 0：不显示
 @property(nonatomic, strong) EASocialOps *sEmail;
 
 
-/// Schedule
-/// 日程（iPhone日历提醒）
+/// Schedule affects calendar reminders on your phone. [1: displayed 0: not displayed]
+/// 日程（iPhone日历提醒） 会影响手机日历提醒。1：显示 0：不显示
 @property(nonatomic, strong) EASocialOps *sSchedule;
 
 
