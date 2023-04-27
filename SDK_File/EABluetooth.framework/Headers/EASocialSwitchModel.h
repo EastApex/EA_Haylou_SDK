@@ -43,8 +43,15 @@ NS_ASSUME_NONNULL_BEGIN
 /// 短信
 @property(nonatomic, strong) EASocialOps *sSms;
 
-/// Social will affect the display of APP push. [1: displayed 0: not displayed]
-/// 社交（第三方App推送提醒 ） 会影响 APP推送的显示。1：显示 0：不显示
+ /**
+  Note a few things about testing your push:
+  1. The watch must be paired with the phone to allow for notifications.
+  2. The watch needs to disable DND
+  3. Enable related Bluetooth protocols. Class EASocialSwitchModel and  Class  EAAppMessageSwitchData
+  */
+
+/// Social
+/// 社交（第三方App推送提醒 ）
 @property(nonatomic, strong) EASocialOps *sSocial;
 
 /// sEmail affects mobile email APP alerts. [1: displayed 0: not displayed]

@@ -91,20 +91,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) NSInteger lcdPixelType;
 
 
-///// apollo
-//@property(nonatomic,readonly) NSString *apbVerion;
-//
-///// res
-//@property(nonatomic,readonly) NSString *rVerion;
-//
-///// hr
-//@property(nonatomic,readonly) NSString *hrVerion;
-//
-///// tp
-//@property(nonatomic,readonly) NSString *tpVerion;
-//
-///// gps
-//@property(nonatomic,readonly) NSString *gpsVerion;
+
 
 @end
 

@@ -12,28 +12,11 @@
  
  SDK access documentation
  https://www.showdoc.com.cn/2042713679210858/0
-<<<<<<< HEAD
 
- Date：2023-04-04
-=======
- 
- Date：2023-04-15
->>>>>>> 1.0.68.5
- Version：1.0.68.4
- 1. Modify the SDK log style
- 2. Rectify the fault that commands cannot be sent because the 5526 service is changed.
- 3. Fixed an issue where paired watches could not be found.
- 4. Fix the 5526 watch face
- 
- 1. 修改SDK log样式
- 2. 修复5526服务发生改变导致不能发送命令的问题。
- 3. 修复已配对手表找不到的问题。
-<<<<<<< HEAD
- 4. Class EASocialSwitchModel 添加说明
- 
-=======
- 4. 修复5526表盘问题
->>>>>>> 1.0.68.5
+ Date：2023-04-27
+ Version：1.0.71.1
+ 1.新增多种运动类型
+
   */
 
 #import <Foundation/Foundation.h>
