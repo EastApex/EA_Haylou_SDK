@@ -9,7 +9,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// id = 2008 
 @interface EAAppSportRealTimeModel : EABaseModel
 
 /// 当前运动的总步数
@@ -48,7 +47,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// Time stamp
 @property(nonatomic, assign) NSInteger timestamp;
 
-
+/** 当前速度（单位: M/H） */
+@property(nonatomic, assign) NSInteger speed;
 
 
 @end

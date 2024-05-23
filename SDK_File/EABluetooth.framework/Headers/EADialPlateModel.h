@@ -42,7 +42,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// Set the built-in dial
 + (instancetype)eaInitBuiltInWatchFaceWithID:(NSInteger )id_p;
 
-
+/// show the custom watch face
++ (instancetype)eaInitCustomWatchFaceWithID:(NSString *)userWfId;
 
 @end
 

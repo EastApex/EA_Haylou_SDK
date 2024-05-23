@@ -28,6 +28,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 固件版本：
 @property(nonatomic, copy) NSString *firmwareVersion;
 
+
+/** 客户版本号(如果有值，则用于显示给客户) */
+@property(nonatomic,  copy) NSString *customFirmwareVersion;
+
+
 /// Whether the binding
 /// 是否绑定
 @property(nonatomic, assign) EABindingType bindingType;

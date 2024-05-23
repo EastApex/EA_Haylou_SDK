@@ -79,6 +79,10 @@
 #import <EABluetooth/EAVibrateIntensity.h>
 #import <EABluetooth/EAAppLaunchScreenSport.h>
 #import <EABluetooth/EAMenstrualReminder.h>
+#import <EABluetooth/EASos.h>
+#import <EABluetooth/EAPwd.h>
+#import <EABluetooth/EASleepScoreData.h>
+#import <EABluetooth/EASportHrData.h>
 
 // ops
 #import <EABluetooth/EABingingOps.h>
@@ -114,5 +118,6 @@
 #import <EABluetooth/EADBFrequencyModel.h>
 #import <EABluetooth/EADBOneSleepModel.h>
 #import <EABluetooth/EADBDaySleepModel.h>
-
+#import <EABluetooth/EADBSportHrModel.h>
+#import <EABluetooth/EADBSleepScoreModel.h>
 #endif /* EAModelHeader_h */

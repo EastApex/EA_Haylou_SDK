@@ -18,8 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取 Class EAWatchModel 对象后，缓存 watchSign = .notSupportSn ? .bleMacAddr : .id_p;
 @property(nonatomic,strong) NSString *watchSign;
 
-
-
 /// 单例
 + (instancetype)defaultHandle;
 

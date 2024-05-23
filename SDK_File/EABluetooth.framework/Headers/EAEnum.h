@@ -281,6 +281,20 @@ typedef NS_ENUM(NSUInteger, EADataInfoType) {
     /// EAMenstrualReminder
     EADataInfoTypeMenstrualReminder = 55,
     
+    /// id = 58
+    /// 紧急联系人
+    /// Sos
+    /// EASos
+    EADataInfoTypeSos = 58,
+    
+    
+    /// id = 65
+    /// watch password
+    /// EAPwd
+    EADataInfoTypePwd = 65,
+    
+    
+    
     /// Operating Phone Commands
     /// 操作手机命令
     /// EAPhoneOpsModel
@@ -354,6 +368,16 @@ typedef NS_ENUM(NSUInteger, EADataInfoType) {
     /// EAHabitTrackerDataModel
     EADataInfoTypeHabitTrackerData = 3011,
     
+    /// 睡眠得分数据
+    /// Sleep score data
+    /// EASleepScoreData
+    EADataInfoTypeSleepScoreData = 3012,
+    
+    
+    /// 多运动心率数据
+    /// Sport heart rate data
+    /// EASportHrData
+    EADataInfoTypeSportHrData = 3013,
 
     /// OTA命令
     EADataInfoTypeOTARequest = 9001,
@@ -689,6 +713,42 @@ typedef NS_ENUM(NSUInteger,EALanguageType) {
     ///匈牙利语
     ///Hungarian
     EALanguageTypeHungarian = 26,
+    
+    /// 印地语
+    /// Hindi
+    EALanguageTypeHindi = 27,
+    
+    /// 乌克兰语
+    /// Ukrainian
+    EALanguageTypeUkrainian = 28,
+    
+    /// 罗马尼亚语
+    /// Romanian
+    EALanguageTypeRomanian = 29,
+
+    /// 摩尔多瓦语
+    /// Moldovan
+    EALanguageTypeMoldovan = 30,
+    
+    /// 孟加拉语
+    /// Bengali
+    EALanguageTypeBengali = 31,
+
+    /// 斯洛伐克语
+    /// Slovak
+    EALanguageTypeSlovak = 32,
+
+    /// 丹麦语
+    /// Danish
+    EALanguageTypeDanish = 33,
+
+    /// 挪威语
+    /// Norwegian
+    EALanguageTypeNorwegian = 34,
+
+    /// 芬兰语
+    /// Finnish
+    EALanguageTypeFinnish = 35,
 };
 
 
@@ -762,6 +822,14 @@ typedef NS_ENUM(NSUInteger,EADeviceOpsType) {
     /// Enable Watch operation The pairing box is displayed on the IOS phone
     /// 使能手表操作IOS手机弹出配对框
     EADeviceOpsTypeShowiPhonePairingAlert = 13,
+    
+    /// 关闭bt信息回复功能
+    /// Disable the bt message reply function
+    EADeviceOpsTypeBtMsgOff = 14,
+
+    /// 打开bt信息回复功能
+    /// open the bt message reply function
+    EADeviceOpsTypeBtMsgOn = 15,
 };
 
 
@@ -1186,23 +1254,41 @@ typedef NS_ENUM(NSUInteger,EAPhoneOps) {
     /// 手表发起：结束app运动
     EAPhoneOpsAppSportEnd = 15,
     
-    ///  接听来电(android) */
+    ///  接听来电(android)
     EAPhoneOpsIncomingCallAccept = 16,
 
-    ///  拒接来电(android) */
+    ///  拒接来电(android)
     EAPhoneOpsIncomingCallReject = 17,
 
-    ///  勿扰打开 */
+    ///  Do not disturb open
     EAPhoneOpsNotDisturbOpen = 18,
 
-    ///  勿扰关闭 */
+    ///  Do not disturb close
     EAPhoneOpsNotDisturbClose = 19,
 
-    ///  抬手亮屏打开 */
+    ///  抬手亮屏打开
+    ///  Lift your hand to light up the screen and turn it on
     EAPhoneOpsGesturesOpen = 20,
 
-    ///  抬手亮屏关闭 */
+    ///  抬手亮屏关闭
+    ///  Lift your hand to light up the screen and turn it off
     EAPhoneOpsGesturesClose = 21,
+    
+    /// 经典蓝牙BT打开
+    /// Classic Bluetooth BT Open
+    EAPhoneOpsBtOn = 22,
+
+    ///  经典蓝牙BT关闭
+    ///  Classic Bluetooth BT Close
+    EAPhoneOpsBtOff = 23,
+    
+    /// 经典蓝牙BT打开(已连接)
+    /// Classic Bluetooth BT connected
+    EAPhoneOpsBtConnected = 24,
+    
+    /// OTA失败
+    /// Ota Fail
+    EAPhoneOpsOtaFail = 25,
     
     /// SDK processing of big data completed
     /// SDK处理大数据完成
@@ -2516,6 +2602,54 @@ typedef NS_ENUM(NSUInteger,EAWatchSportType) {
     /// Show Jumper
     EAWatchSportShowJumper = 152,
     
+    /** 攀爬 :          climbing */
+    EAWatchSportClimbing = 153,
+
+    /** 冲浪 :          Surfing */
+    EAWatchSportWaterSurfing = 154,
+
+    /** 广场舞 :      Square Dancing */
+    EAWatchSportSquareDancing = 155,
+
+    /** 高山滑雪 :      Alpine Skiing */
+    EAWatchSportDownhillskiing = 156,
+    
+    /** 竞走 */
+    EAWatchSportWalkingRace = 157,
+
+    /** 室内冲浪 */
+    EAWatchSportIndoorSurfing = 158,
+
+    /** 战绳 */
+    EAWatchSportBattleRope = 159,
+
+    /** 室内健身 */
+    EAWatchSportIndoorFitness = 160,
+
+    /** 越野摩托 */
+    EAWatchSportScramblingMotorcycle = 161,
+
+    /** 回力球 */
+    EAWatchSportHiliBall = 162,
+
+    /** 钢管舞 */
+    EAWatchSportPoleDancing = 163,
+
+    /** 现代舞 */
+    EAWatchSportModernDance = 164,
+
+    /** 桌上足球 */
+    EAWatchSportTableFootball = 165,
+
+    /** 秋千 */
+    EAWatchSportSwing = 166,
+
+    /** 踢毽子 */
+    EAWatchSportShuttlecockKicking = 167,
+
+    /** 室内溜冰 */
+    EAWatchSportIndoorSkatingRink = 168,
+
     
     
     /// Intelligent movement: Daily

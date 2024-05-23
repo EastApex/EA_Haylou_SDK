@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSInteger remSleepMinutes;
 @property NSInteger awakeCount;
 
+
 /// 时间戳字符串（逗号隔开）
 @property NSString *timestamps;
 
@@ -30,6 +31,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) NSArray *timestampArray;
 
 @property (readonly) NSArray *sleepNodeArray;
+
+
+/// 获取睡眠得分
+/// return -1 为查询不到此睡眠有得分记录
+- (NSInteger)getSleepScore;
 
 @end
 

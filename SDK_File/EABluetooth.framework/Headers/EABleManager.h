@@ -17,7 +17,17 @@
  Version：1.0.71.1
  1.新增多种运动类型
 
+ Date：2024-05-22
+ 1.R001手表【发送绑定结束命令会导致手表断连（7~80%的概率）】=》发现绑定结束后意外断连，SDK重新发起连接，不抛断连状态。
+ 
+ Date：2024-05-22
+ 1.修改绑定超时时长为300s
+
+ Date：2024-05-23
+ 1.修改合并睡眠数据处理不正确问题【数据丢失】
+ 
   */
+
 
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>

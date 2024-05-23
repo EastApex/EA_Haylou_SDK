@@ -1,0 +1,44 @@
+{
+  "name": "EABluetooth",
+  "version": "1.0.95.1",
+  "summary": "A short description of EABluetooth.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/EastApex/EA_Haylou_SDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Aye": "aye.zhang@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/EastApex/EA_Haylou_SDK.git",
+    "tag": "1.0.95.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SDK_File/EABluetooth/Classes/**/*",
+  "dependencies": {
+    "Protobuf": [
+      "~> 3.14.0"
+    ],
+    "YYKit": [
+
+    ],
+    "Realm": [
+
+    ],
+    "SAMKeychain": [
+
+    ]
+  },
+  "resource_bundles": {
+    "EAWatchFace": [
+      "SDK_File/EAWatchFace.bundle/*"
+    ]
+  },
+  "ios": {
+    "vendored_frameworks": "SDK_File/EABluetooth.framework"
+  }
+}

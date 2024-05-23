@@ -1,0 +1,46 @@
+PODS:
+  - EABluetooth (1.0.95.1):
+    - Protobuf (~> 3.14.0)
+    - Realm
+    - SAMKeychain
+    - YYKit
+  - Protobuf (3.14.0)
+  - Realm (10.49.1):
+    - Realm/Headers (= 10.49.1)
+  - Realm/Headers (10.49.1)
+  - SAMKeychain (1.5.3)
+  - SnapKit (5.6.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - EABluetooth (from `../`)
+  - Protobuf
+  - SAMKeychain
+  - SnapKit
+  - YYKit
+
+SPEC REPOS:
+  trunk:
+    - Protobuf
+    - Realm
+    - SAMKeychain
+    - SnapKit
+    - YYKit
+
+EXTERNAL SOURCES:
+  EABluetooth:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EABluetooth: 8188a23cf977e783141c5b3365609e102b18393a
+  Protobuf: 0cde852566359049847168e51bd1c690e0f70056
+  Realm: 1fab4a224fd7a294eca142a0efe8b54546290fbf
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: f6acb2999b270d2daa962b930d5f915112147ef1
+
+COCOAPODS: 1.15.2
